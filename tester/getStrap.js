@@ -11,13 +11,10 @@ https.get('https://slaas.fly.dev/', res => {
 	});
 
 	res.on('end', () => {
-		// console.log('Response ended: ');
+		// example response:
+		// { "strapline": "lorem ipsum" }
+
 		const responseToString = JSON.parse(Buffer.concat(data).toString());
-
-		// for(user of users) {
-		// 	console.log(`Got user with id: ${user.id}, name: ${user.name}`);
-		// }
-
 		console.log('Strapline returned:', responseToString.strapline);
 	});
 }).on('error', err => {
