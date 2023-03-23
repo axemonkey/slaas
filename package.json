@@ -1,0 +1,14 @@
+{
+  "name": "SLaaS",
+  "version": "0.1.0",
+  "private": "true",
+  "author": "Clive Murray <clive+murray@clivemurray.com>",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
